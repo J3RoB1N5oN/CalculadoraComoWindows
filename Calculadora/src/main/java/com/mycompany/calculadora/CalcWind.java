@@ -408,11 +408,12 @@ public class CalcWind extends javax.swing.JFrame {
                             .addComponent(jBtnNro6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jBtnResta, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jBtnNro1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBtnNro2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBtnNro3, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBtnSuma, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jBtnSuma, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jBtnNro1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jBtnNro2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jBtnNro3, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jBtnCambioSigno, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -441,7 +442,8 @@ public class CalcWind extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTxtPantallaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtPantallaActionPerformed
-        // TODO add your handling code here:
+        // jTXT PANTALLA
+        jTxtPantalla.setEditable(false);
     }//GEN-LAST:event_jTxtPantallaActionPerformed
 
     private void jBtnCambioSignoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCambioSignoActionPerformed
@@ -578,6 +580,7 @@ public class CalcWind extends javax.swing.JFrame {
         // Boton CE
         calc.CE(jTxtPantalla.getText());
         jTxtPantalla.setText(""+calc.resultadofinal(jTxtPantalla.getText()));
+        jTxtPantalla.setText("");
     }//GEN-LAST:event_jBtnCleanEverythingActionPerformed
 
     private void jBtnCleanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCleanActionPerformed

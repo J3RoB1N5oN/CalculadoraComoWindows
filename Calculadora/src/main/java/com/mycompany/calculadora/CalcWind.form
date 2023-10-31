@@ -151,11 +151,13 @@
                               <Component id="jBtnResta" linkSize="2" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jBtnNro1" linkSize="2" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
-                              <Component id="jBtnNro2" linkSize="2" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
-                              <Component id="jBtnNro3" linkSize="2" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jBtnSuma" alignment="1" min="-2" pref="48" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jBtnNro1" linkSize="2" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="jBtnNro2" linkSize="2" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="jBtnNro3" linkSize="2" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="jBtnCambioSigno" min="-2" pref="45" max="-2" attributes="0"/>

@@ -54,9 +54,11 @@ public class Calculadora {
     }
     
     public void eliminarNum(){
-        retorno = digito.substring(0, digito.length()-1);
-        digito = retorno;
+         if (digito != null && !digito.isEmpty()) {
+        String nuevaCadena = digito.substring(0, digito.length() - 1);
+        digito = nuevaCadena;
         setDigito(digito);
+        }
     }
     
     public void botonC(){
@@ -64,59 +66,81 @@ public class Calculadora {
     }
     
     public void suma(String num){
-        this.mem1 = Double.parseDouble(num);
-        suma = true;
-        setDigito("");
+            if (digito != null && !digito.isEmpty()) {
+            this.mem1 = Double.parseDouble(num);
+            suma = true;
+            setDigito("");
+        }
     }
     
     public void resta(String num){
+        if (digito != null && !digito.isEmpty()) {
         this.mem1 = Double.parseDouble(num);
         resta = true;
         setDigito("");
+        }
     }
     
     public void multiplicacion(String num){
+        if (digito != null && !digito.isEmpty()) {
         this.mem1 = Double.parseDouble(num);
         multiplicacion = true;
         setDigito("");
+        }
     }
     
     public void division(String num){
+        if (digito != null && !digito.isEmpty()) {
         this.mem1 = Double.parseDouble(num);
         division = true;
         setDigito("");
+        }
     }
     
     public void cambioSigno(String num){
+        if (digito != null && !digito.isEmpty()) {
         this.mem1 = Double.parseDouble(num);
         cambioSigno = true;
         setDigito("");
+        }
     }
     
     public void unoSobre(String num){
+        if (digito != null && !digito.isEmpty()) {
         this.mem1 = Double.parseDouble(num);
         unoSobre = true;
+        }
     }
     
     public void porcentaje(String num){
+        if (digito != null && !digito.isEmpty()) {
         this.mem1 = Double.parseDouble(num);
         porcentaje = true;
+        }
     }
     
     public void cuadrado(String num){
+        if (digito != null && !digito.isEmpty()) {
         this.mem1 = Double.parseDouble(num);
         cuadrado = true;
+        }
     }
     
     public void raiz(String num){
+        if (digito != null && !digito.isEmpty()) {
         this.mem1 = Double.parseDouble(num);
         raiz = true;
+        }
     }
     
     public void CE(String num){
-        this.mem1 = Double.parseDouble(num);
-        CE = true;
-        setDigito("");
+        if(num != null && !num.isEmpty()){
+            this.mem1 = Double.parseDouble(num);
+            this.CE = true;
+            setDigito("");
+        }
+        else {
+        }
     }
     
     //Funciones
