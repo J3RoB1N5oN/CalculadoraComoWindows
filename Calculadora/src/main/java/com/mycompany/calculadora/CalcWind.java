@@ -466,7 +466,8 @@ public class CalcWind extends javax.swing.JFrame {
     }//GEN-LAST:event_jBtnComaActionPerformed
 
     private void jBtnTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnTotalActionPerformed
-        // Total
+        // Boton = 
+        jTxtPantalla.setText("");
         jTxtPantalla.setText(""+calc.resultadofinal(jTxtPantalla.getText()));
     }//GEN-LAST:event_jBtnTotalActionPerformed
 
